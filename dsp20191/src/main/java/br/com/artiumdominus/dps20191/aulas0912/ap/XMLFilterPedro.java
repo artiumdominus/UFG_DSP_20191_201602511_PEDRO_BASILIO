@@ -13,7 +13,7 @@ import org.dom4j.io.SAXReader;
 import org.dom4j.io.OutputFormat;
 import org.dom4j.io.XMLWriter;
 
-public class FilterPedro {
+public class XMLFilterPedro {
 
     public static void main(String[] args) {
 
@@ -59,7 +59,9 @@ public class FilterPedro {
             XMLWriter writer;
 
             File file = new File("src/main/resources/201602511.xml");
-            file.createNewFile();
+            if (!file.exists()) {
+                file.createNewFile();
+            }
 
             writer = new XMLWriter(new FileOutputStream("src/main/resources/201602511.xml"), format);
             writer.write(outputDocument);
