@@ -22,23 +22,30 @@ public class XMLtoScreen {
 
             Element classElement = document.getRootElement();
 
-            List<Node> nodes = document.selectNodes("/class/student");
+            List<Node> students = document.selectNodes("/class/student");
             System.out.println("• • • • • • • • • •");
 
-            for (Node node : nodes) {
+            for (Node student : students) {
                 System.out.println("\nCurrent Element :"
-                        + node.getName());
+                        + student.getName());
                 System.out.println("First Name : "
-                        + node.selectSingleNode("firstname").getText());
+                        + student.selectSingleNode("firstname").getText());
                 System.out.println("Last Name : "
-                        + node.selectSingleNode("lastname").getText());
+                        + student.selectSingleNode("lastname").getText());
                 System.out.println("Nick Name : "
-                        + node.selectSingleNode("nickname").getText());
+                        + student.selectSingleNode("nickname").getText());
+                System.out.println("› Frequencia :");
+                List<Node> aulas = student.selectNodes("frequencia/aulas");
+                for (Node aula : aulas) {
+                    System.out.println("\tAulas " + aula.valueOf("@numero")
+                            + " : " + aula.getText());
+                }
             }
 
         } catch (DocumentException e) {
             e.printStackTrace();
         }
+
     }
 
 }

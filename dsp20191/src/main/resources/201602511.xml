@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<student>
+  <matricula>201602511</matricula>
+  <firstname>PEDRO BASILIO</firstname>
+  <lastname>NETO</lastname>
+  <nickname>pedro.neto</nickname>
+  <frequencia>
+    <aulas numero="0104">P</aulas>
+    <aulas numero="0508">P</aulas>
+  </frequencia>
+</student>
