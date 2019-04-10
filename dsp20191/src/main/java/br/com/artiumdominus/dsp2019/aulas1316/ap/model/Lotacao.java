@@ -1,6 +1,6 @@
 package br.com.artiumdominus.dsp2019.aulas1316.ap.model;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Lotacao {
 
