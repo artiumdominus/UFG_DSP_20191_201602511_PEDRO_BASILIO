@@ -2,21 +2,21 @@ package br.com.artiumdominus.dsp20191.aulas1316.ap.model;
 
 public class Departamento {
 
-    private String id;
+    private Long id;
     private String nome;
 
     public Departamento(){};
 
-    public Departamento(String id, String nome) {
+    public Departamento(Long id, String nome) {
         this.id = id;
         this.nome = nome;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

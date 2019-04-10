@@ -11,7 +11,7 @@ public class TabelaCargosCreate extends PersistenciaJdbc {
         System.out.println("Criando a tabela Cargos");
 
         String sql = "CREATE TABLE IF NOT EXISTS CARGOS(\n" +
-                "ID_CARGO VARCHAR(100) NOT NULL PRIMARY KEY,\n" +
+                "ID_CARGO LONG NOT NULL PRIMARY KEY,\n" +
                 "NOME VARCHAR(100) NOT NULL," +
                 "SALARIO DECIMAL(10,2) NOT NULL\n" +
                 ")";

@@ -2,23 +2,23 @@ package br.com.artiumdominus.dsp20191.aulas1316.ap.model;
 
 public class Cargo {
 
-    private String id;
+    private Long id;
     private String nome;
     private double salario;
 
     public Cargo(){};
 
-    public Cargo(String id, String nome, double salario) {
+    public Cargo(Long id, String nome, double salario) {
         this.id = id;
         this.nome = nome;
         this.salario = salario;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -61,9 +61,9 @@ public class Main {
 
         // Persistência dos cargos
         List<Cargo> cargos = new LinkedList<Cargo>();
-        cargos.add(new Cargo("1", "Açougueiro", 3000));
-        cargos.add(new Cargo("2", "Caçador", 5000));
-        cargos.add(new Cargo("3", "Atendente", 1000));
+        cargos.add(new Cargo(1L, "Açougueiro", 3000));
+        cargos.add(new Cargo(2L, "Caçador", 5000));
+        cargos.add(new Cargo(3L, "Atendente", 1000));
 
         PersisteCargo pc = new PersisteCargo();
 
@@ -77,10 +77,10 @@ public class Main {
 
         // Persistência dos departamentos
         List<Departamento> departamentos = new LinkedList<Departamento>();
-        departamentos.add(new Departamento("1", "Grande Porte"));
-        departamentos.add(new Departamento("2", "Pequeno Porte"));
-        departamentos.add(new Departamento("3", "Aves"));
-        departamentos.add(new Departamento("4", "Peixes"));
+        departamentos.add(new Departamento(1L, "Grande Porte"));
+        departamentos.add(new Departamento(2L, "Pequeno Porte"));
+        departamentos.add(new Departamento(3L, "Aves"));
+        departamentos.add(new Departamento(4L, "Peixes"));
 
         PersisteDepartamento pd = new PersisteDepartamento();
 
