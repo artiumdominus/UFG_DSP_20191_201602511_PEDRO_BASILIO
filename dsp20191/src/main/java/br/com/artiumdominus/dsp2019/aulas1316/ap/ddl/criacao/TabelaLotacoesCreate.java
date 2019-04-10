@@ -11,7 +11,7 @@ public class TabelaLotacoesCreate extends PersistenciaJdbc {
         System.out.println("Criando a tabela Lotações");
 
         String sql = "CREATE TABLE IF NOT EXISTS LOTACOES(\n" +
-                "ID_LOTACAO LONG NOT NULL PRIMARY KEY,\n" +
+                "ID_FUNCIONARIO LONG NOT NULL,\n" +
                 "DATA_INICIAL DATE NOT NULL,\n" +
                 "DATA_FINAL DATE NOT NULL,\n" +
                 "ID_CARGO VARCHAR(100) NOT NULL,\n" +
