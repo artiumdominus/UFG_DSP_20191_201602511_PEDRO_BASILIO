@@ -40,7 +40,7 @@ public class VeiculoRepositoryImplementation implements VeiculoRepository {
 
     @Override
     public void delete(Veiculo veiculo) {
-        em.getTransaction();
+        em.getTransaction().begin();
         em.remove(veiculo);
         em.getTransaction().commit();
     }
